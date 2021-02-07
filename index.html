@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Digital Ocean</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,21 +16,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="debug">
+  <body class="">
 
     <header>
-      <section class="header_top navbar-fixed-top">
+
+      <!-- INIZIO NAV FISSATO  -->
+      <section class="header_top navbar-fixed-top bg_white">
         <div class="container">
           <div class="row">
-            <div class="col-xs-6">
+            <nav>
 
-            </div>
-            <div class="col-xs-6">
+              <!-- LOGO A SINISTRA  -->
+              <div class="col-xs-5 col-sm-5 col-md-2">
+                <img src="img/logo.png" class="img-responsive inl_block" alt="">
+              </div>
 
-            </div>
+              <!-- BARS  -->
+              <div class="col-xs-7 col-sm-7 hidden-md hidden-lg text-right">
+                <a href="#"><i class="fas fa-bars color_blue"></i></a>
+              </div>
+
+              <!--  UL AL CENTRO -->
+              <div class="col-md-5 visible-md-block text-right visible-lg-block">
+                <ul>
+                  <li><a href="#" class="freccina_giù">Products</a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#" class="freccina_giù">Community</a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+
+              <!-- UL A DESTRA  -->
+              <div class="col-md-5 visible-md-block visible-lg-block text-right">
+                <ul>
+                  <li><a href="#">Docs</a> </li>
+                  <li><a href="#" class="freccina_giù">Support</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#" class="btn btn_border color_blue">Sign up</a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </section>
+      <!-- FINE NAV FISSATO -->
+
 
       <section class="header_jumbo">
         <div class="container">
