@@ -1,12 +1,20 @@
-.debug .container {
-  height: 20vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.debug .container [class*="col-"] , .row {
-  height: 100%;
+
+.debug [class*="col-"] {
   border: 1px solid black;
+  height: 100px;
 }
 
 .header_jumbo {
   margin-top: 20vh;
+  background-color: blue;
+}
+
+.header_bottom {
+  background-color: lightgrey;
 }
