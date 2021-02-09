@@ -20,6 +20,11 @@ section:not(.header_top) {
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
+h1 {
+  font-size: 3.5em;
+}
+
 li {
   list-style: none;
   display: inline;
@@ -32,8 +37,13 @@ a {
 .strong_btn {
   font-weight: 600;
 }
+
 .inl_block {
   display: inline-block;
+}
+
+.border_rad {
+  border-radius: 10px;
 }
 
 .color_blue {
@@ -47,72 +57,29 @@ a {
 .color_grey {
   color: #5b6987;
 }
+
 .bg_white {
   background-color: white;
 }
-.border_rad {
-  border-radius: 10px;
-}
+
 .bg_grey {
   background-color: #f3f5f9;
 }
+
 .bg_dark_blue {
   background-color: #021d4c;
 }
-h1 {
-  font-size: 3.5em;
+
+.bg_grad_blue {
+  background: rgb(0,38,161);
+  background: linear-gradient(0deg, rgba(0,38,161,1) 0%, rgba(0,67,194,1) 100%);
 }
+
 .p_big {
   font-size: 1.3em;
 }
-/* FINE REGOLE GENERALI  */
 
-header .header_top {
-  line-height: 10vh;
-}
-
-header .header_top i {
-  vertical-align: middle;
-  font-size: 2.5em;
-}
-
-header .header_top img {
-  margin-bottom: 10px;
-}
-
-header .header_top ul li a:not(.color_blue) {
-  color: #333;
-  padding-left: 15px;
-}
-
-.btn_border {
-  border: 1px solid #2485fd;
-  margin-left: 15px;
-}
-
-.freccina_giù:after {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f078';
-  font-weight: 600;
-  color: #333;
-  padding-left: 5px;
-}
-
-header .header_jumbo {
-  margin-top: 10vh;
-  padding: 50px 15px;
-  background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.my_button {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  position: relative;
-}
+/* BOTTONI  */
 
 .btn_blue {
   background-color: rgba(36,133,253,0.67);
@@ -122,16 +89,19 @@ header .header_jumbo {
   background-color: white;
   box-shadow: 1px 1px 3px lightgrey;
 }
-.my_google {
-  position: absolute;
-  left: 5px;
-  width: 20px;
+
+.my_btn_white {
+  background-color: white;
+  margin: 15px 0;
 }
 
-header .header_bottom img {
-  height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+/* CONTENUTI BEFORE E AFTER  */
+.freccina_giù:after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f078';
+  font-weight: 600;
+  color: #333;
+  padding-left: 5px;
 }
 
 .freccina_destra:after {
@@ -141,28 +111,27 @@ header .header_bottom img {
   font-size: 0.8em;
 }
 
-.deploy_titolo {
-  padding-bottom: 50px;
-}
-.deploy_list li a {
-  display: block;
+.ch_bef:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: '\f053';
+  font-size: 2em;
   color: #5b6987;
-  padding: 5px 0;
 }
 
-.deploy_list {
-  border-left: 2px solid lightgrey;
+.ch_aft:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: '\f054';
+  font-size: 2em;
+  color: #333;
 }
 
-.deploy_block {
-  padding-top: 15px;
-}
-.deploy_img {
-  height: 40px;
-}
+/* FINE REGOLE GENERALI  */
 
+/* MEDIA QUERIES  */
 @media screen and (max-width: 767px) {
-  .slider_box {
+  .row .slider_box {
     width: 90%;
   }
 
@@ -212,10 +181,89 @@ header .header_bottom img {
   }
 }
 
+/* FINE MEDIA  */
+
+/* HEADER  */
+
+header .header_top {
+  line-height: 10vh;
+}
+
+header .header_top i {
+  vertical-align: middle;
+  font-size: 2.5em;
+}
+
+header .header_top img {
+  margin-bottom: 10px;
+}
+
+header .header_top ul li a:not(.color_blue) {
+  color: #333;
+  padding-left: 15px;
+}
+
+.btn_border {
+  border: 1px solid #2485fd;
+  margin-left: 15px;
+}
+
+header .header_jumbo {
+  margin-top: 10vh;
+  padding: 50px 15px;
+  background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.my_button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.my_google {
+  position: absolute;
+  left: 5px;
+  width: 20px;
+}
+
+header .header_bottom img {
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* MAIN */
+
+/* Deploy */
+.deploy_titolo {
+  padding-bottom: 50px;
+}
+.deploy_list li a {
+  display: block;
+  color: #5b6987;
+  padding: 5px 0;
+}
+
+.deploy_list {
+  border-left: 2px solid lightgrey;
+}
+
+.deploy_block {
+  padding-top: 15px;
+}
+.deploy_img {
+  height: 40px;
+}
+
 .row_margin {
   margin: 0 auto;
 }
 
+/* Slider  */
 .slider_box {
   position: relative;
   width: 70%;
@@ -235,22 +283,6 @@ header .header_bottom img {
   right: 0;
 }
 
-.ch_bef:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  content: '\f053';
-  font-size: 2em;
-  color: #5b6987;
-}
-
-.ch_aft:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  content: '\f054';
-  font-size: 2em;
-  color: #333;
-}
-
 .slider_img , .slider_white {
   width: 80%;
   margin: 30px auto;
@@ -264,11 +296,7 @@ header .header_bottom img {
   padding-top: 20px;
 }
 
-.bg_grad_blue {
-  background: rgb(0,38,161);
-  background: linear-gradient(0deg, rgba(0,38,161,1) 0%, rgba(0,67,194,1) 100%);
-}
-
+/* Table  */
 .border_bo_white {
   border-bottom: 1px solid white;
 }
@@ -290,21 +318,14 @@ header .header_bottom img {
 .slider_white {
   background-color: white;
   padding: 100px 5px;
-
 }
 
 .slider_white img {
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
-.p_grande {
-  font-size: 1.1em;
-}
-
-.my_btn_white {
-  background-color: white;
-  margin: 15px 0;
-}
+/* FOOTER  */
 
 .social {
   padding-left: 5px;
@@ -324,6 +345,7 @@ footer section .container .row > * {
   padding-top: 20px;
 }
 
+/* SQUALETTO FISSATO  */
 .squalo_fix {
   position: fixed;
   right: 15px;
