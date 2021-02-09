@@ -59,6 +59,12 @@ a {
 .bg_dark_blue {
   background-color: #021d4c;
 }
+h1 {
+  font-size: 3.5em;
+}
+.p_big {
+  font-size: 1.3em;
+}
 /* FINE REGOLE GENERALI  */
 
 header .header_top {
