@@ -84,7 +84,7 @@ a {
 .btn_blue {
   background-color: rgba(36,133,253,0.67);
 }
-.btn_white {
+.btn_white_shadow {
   color: #333;
   background-color: white;
   box-shadow: 1px 1px 3px lightgrey;
@@ -391,4 +391,29 @@ footer section .container .row > * {
   position: absolute;
   right: -5px;
   bottom: 5px;
+}
+
+/* HOVER  */
+
+.btn_border.color_blue:hover , .my_btn_white:hover {
+  transition: 1s;
+  background-color: #2485fd;
+  color: white;
+}
+
+.btn_blue:hover {
+  transition: 1s;
+  background-color: rgb(36,133,253);
+  color: white;
+}
+
+.btn_white_shadow:hover {
+  transition: 1s;
+  background-color: #333;
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
 }
