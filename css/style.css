@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .debug [class*="col-"] {
@@ -29,6 +29,9 @@ a {
   text-decoration: none;
 }
 
+.strong_btn {
+  font-weight: 600;
+}
 .inl_block {
   display: inline-block;
 }
@@ -52,6 +55,9 @@ a {
 }
 .bg_grey {
   background-color: #f3f5f9;
+}
+.bg_dark_blue {
+  background-color: #021d4c;
 }
 /* FINE REGOLE GENERALI  */
 
@@ -158,6 +164,17 @@ header .header_bottom img {
     margin-left: 15px;
   }
 }
+
+@media screen and (max-width: 991px) {
+
+  .squalo_fix {
+    left: 15px;
+  }
+  .squaletto {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .wrapped {
     width: 70%;
@@ -166,6 +183,7 @@ header .header_bottom img {
   .c_wrap {
     width: 100%;
   }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -255,8 +273,8 @@ header .header_bottom img {
   font-size: 0.8em;
 }
 
-.main_table .col-xs-6 p {
-  color: #CCCFD7;
+.main_table .col-xs-6 p , .light_grey {
+  color: #939baf;
 }
 
 .main_table .col-xs-4 a {
@@ -275,4 +293,74 @@ header .header_bottom img {
 
 .p_grande {
   font-size: 1.1em;
+}
+
+.my_btn_white {
+  background-color: white;
+  margin: 15px 0;
+}
+
+.social {
+  padding-left: 5px;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+footer li {
+  display: block;
+  padding-top: 5px;
+}
+
+footer section .container .row > * {
+  padding-top: 20px;
+}
+
+.squalo_fix {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.squaletto img {
+  height: 100%;
+  width: auto;
+}
+
+.squaletto {
+  height: 50px;
+  width: 50px;
+  background-color: #0041c0;
+  padding: 5px 0;
+  position: relative;
+}
+
+.cerchio_rosso {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+
+.nuvoletta {
+  max-width: 300px;
+  padding: 6px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.nuvoletta:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0da';
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  right: -5px;
+  bottom: 5px;
 }
